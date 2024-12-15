@@ -59,12 +59,13 @@ main {
     font-size: 77px;
     font-weight: bold;
     margin-top: 20px;
+    line-height:88px ;
 }
 
 .weather-app-icon {
-    font-size: 44px;
-    margin-top: 22px;
-    margin-left: 70px;
+    width: 88px;
+    margin-top: 88px;
+    
 
 }
 
