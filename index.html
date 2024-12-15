@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/index.css"  />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Wandile's App</title>
 </head>
 <body>
 <div class="weather-app">
     <header>
         <form class="search-form" id="search-form">
-        <input type="search" placeholder="Enter a city.." required id="search-form-input" class="search form-input"/>
-        <input type="submit" value="search" class="search form-button"/> 
+        <input type="search" placeholder="Enter a city.." required id="search-form-input" class="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button"/> 
         </form>
     </header>
     <main>
         <div class="weather-app-data">
     <div>
-    <h1 class="weather-app-city" id="city"> Paris</h1>
+    <h1 class="weather-app-city" id="city"></h1>
     <p class="weather-app-details">
       Friday 14:55, overcast clouds
       <br  />
       Humidity: <strong> 82% </strong>, Wind: <strong> 2.06km/h </strong>
     </p>
     </div>
-    <div class="weather-app-temp-container"></div>
+    <div class="weather-app-temp-container">
     <div class="weather-app-icon">⛅</div>
-    <div class="weather-app-temp"> 4</div>
+    <div class="weather-app-temp" id="temperature"></div>
     <div class="waether-app-unit">°C </div>
+</div>
 </div>
     </main>
 <footer> Coded by 
