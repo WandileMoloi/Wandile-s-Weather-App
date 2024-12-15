@@ -64,7 +64,7 @@ main {
 
 .weather-app-icon {
     width: 88px;
-    margin-top: 88px;
+    line-height: 88px;
     
 
 }
@@ -84,7 +84,7 @@ main {
 
 .weather-app-details strong {
       color: blueviolet;
-      font-size: 20px;
+      font-size: 18px;
 }
 
 .weather-app-details {
