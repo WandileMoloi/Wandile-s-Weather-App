@@ -1,44 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/index.css"  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Wandile's App</title>
-</head>
-<body>
-<div class="weather-app">
-    <header>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
         <form class="search-form" id="search-form">
-        <input type="search" placeholder="Enter a city.." required id="search-form-input" class="search-form-input"/>
-        <input type="submit" value="search" class="search-form-button"/> 
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
-    </header>
-    <main>
+      </header>
+      <main>
         <div class="weather-app-data">
-    <div>
-    <h1 class="weather-app-city" id="city"></h1>
-    <p class="weather-app-details">
-      <span id="time"></span> , <span id="description"></span>
-      <br  />
-      Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
-    </p>
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span> , <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temp-container">
+            <div id="icon"></div>
+            <div class="weather-app-temp" id="temperature"></div>
+            <div class="waether-app-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast">
+        <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Tue</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong >15°</strong></div>
+            <div class="weather-forecast-temperature">9°</div>
+        </div>
+        </div>
+        <div class="weather-forecast">
+        <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Wen</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong >15°</strong></div>
+            <div class="weather-forecast-temperature">9°</div>
+        </div>
+        </div>
+        <div class="weather-forecast">
+        <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Thur</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong >15°</strong></div>
+            <div class="weather-forecast-temperature">9°</div>
+        </div>
+        </div>
+        <div class="weather-forecast">
+        <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Fri</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong >15°</strong></div>
+            <div class="weather-forecast-temperature">9°</div>
+        </div>
+        </div>
+        <div class="weather-forecast">
+        <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Sat</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong >15°</strong></div>
+            <div class="weather-forecast-temperature">9°</div>
+        </div>
+        </div>
+        <div class="weather-forecast">
+        <div class="weather-forecast-day">
+        <div class="weather-forecast-date">Sun</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong >15°</strong></div>
+            <div class="weather-forecast-temperature">9°</div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </main>
+      <footer>
+        This project is coded by Wandile Moloi, is
+        <a
+          href="https://github.com/WandileMoloi/Wandile-s-Weather-App/commit/003244c704e821f9ed1b8b9425f81b1031e25edd"
+          target="_blank"
+        >
+          on GitHub</a
+        >
+        and
+        <a href="https://wandiles-weather-app.netlify.app/" target="_blank">
+          hosted on Netlify</a
+        >
+      </footer>
     </div>
-    <div class="weather-app-temp-container">
-     <div id="icon"></div>
-    <div class="weather-app-temp" id="temperature"></div>
-    <div class="waether-app-unit">°C </div>
-</div>
-</div>
-    </main>
-<footer> 
-    This project is coded by Wandile Moloi, is
-     <a href="https://github.com/WandileMoloi/Wandile-s-Weather-App/commit/003244c704e821f9ed1b8b9425f81b1031e25edd" target="_blank">  on GitHub</a> 
-     and  
-     <a href="https://wandiles-weather-app.netlify.app/" target="_blank"> hosted on Netlify</a>
-     </footer>
-     </div>
     <script src="src/index.js"></script>
-</body>
+  </body>
 </html>
